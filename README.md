@@ -21,40 +21,7 @@ In this activity, you’ll use the  Citi Bike API to get the status and location
 4. In the `createMarkers` function, pass the resulting bike markers to the `createmap` function as a `layerGroup`.
 
 5.  Using D3, retrieve JSON data from the [Citi Bike station information endpoint](https://gbfs.citibikenyc.com/gbfs/en/station_information.json), and then call the `createMarkers` function.
-.
-The following image shows the map that results from these steps:
-
-    ![Citibike](Images/44-Citibike_basic.png)
-
-### Bonus
-
-If time allows, try the following bonus activity for an extra challenge. Follow these steps:
-
-1. Write code to perform a second API call to the [Citi Bike station status endpoint](https://gbfs.citibikenyc.com/gbfs/en/station_status.json). Take a few moments to study the data that the endpoint returns. In particular, notice `station_id`, `num_bikes_available`, `is_installed`, and `is_renting`.
-
-2. Using the data returned from the second API call, add the following functionality:
-
-    * In the popup for each marker, display the number of available bikes.
-
-    * Add a layer control, and then split the markers into these layer groups:
-
-        * **Coming Soon:** This applies if a station isn't yet installed.
-
-        * **Empty Stations:** This applies if a station has no available bikes.
-
-        * **Out of Order:** This applies if a station is installed but not renting.
-
-        * **Low Stations:** This applies if a station has less than five available bikes.
-
-        * **Healthy Stations:** This applies if a marker doesn't fall into any of the previous layer groups.
-
-3. Use a Leaflet plugin to create different types of markers to represent the layers. The following step shows an example map that uses [Leaflet.ExtraMarkers](https://github.com/coryasilva/Leaflet.ExtraMarkers). However, feel free to use another plugin if you prefer.
-
-4. Add a legend to your map to explain the different markers. The following image shows an example of the final advanced map:
-
-    ![Citibike](Images/44-Citibike_advanced.png)
-
-5. When you complete the app, deploy it to GitHub Pages.
+    
 
 ## Hint
 
